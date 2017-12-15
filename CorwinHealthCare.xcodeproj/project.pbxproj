@@ -11,6 +11,7 @@
 		04C043781FE3A63400E922E8 /* TTGSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C043771FE3A63400E922E8 /* TTGSnackbar.swift */; };
 		04C0437A1FE3D02E00E922E8 /* TTGSnackbar in Resources */ = {isa = PBXBuildFile; fileRef = 04C043791FE3D02E00E922E8 /* TTGSnackbar */; };
 		04C0437C1FE3D20700E922E8 /* CWHCSignupGenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0437B1FE3D20700E922E8 /* CWHCSignupGenderTableViewCell.swift */; };
+		04C0437E1FE40F8400E922E8 /* CWHCForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0437D1FE40F8300E922E8 /* CWHCForgotPasswordViewController.swift */; };
 		04C17C731FE28D4D00F228CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17C721FE28D4D00F228CF /* AppDelegate.swift */; };
 		04C17C7A1FE28D4D00F228CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C17C781FE28D4D00F228CF /* Main.storyboard */; };
 		04C17C7C1FE28D4D00F228CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C17C7B1FE28D4D00F228CF /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		04C043771FE3A63400E922E8 /* TTGSnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTGSnackbar.swift; path = TTGSnackbar/TTGSnackbar.swift; sourceTree = "<group>"; };
 		04C043791FE3D02E00E922E8 /* TTGSnackbar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TTGSnackbar; sourceTree = "<group>"; };
 		04C0437B1FE3D20700E922E8 /* CWHCSignupGenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCSignupGenderTableViewCell.swift; sourceTree = "<group>"; };
+		04C0437D1FE40F8300E922E8 /* CWHCForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		04C17C6F1FE28D4C00F228CF /* CorwinHealthCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorwinHealthCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C17C721FE28D4D00F228CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C17C791FE28D4D00F228CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				04C17CAA1FE2F57E00F228CF /* CWHCSignupViewController.swift */,
 				04C043711FE3875C00E922E8 /* CWHCSignupTableViewCell.swift */,
 				04C0437B1FE3D20700E922E8 /* CWHCSignupGenderTableViewCell.swift */,
+				04C0437D1FE40F8300E922E8 /* CWHCForgotPasswordViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C0437E1FE40F8400E922E8 /* CWHCForgotPasswordViewController.swift in Sources */,
 				04C17CA71FE2B18500F228CF /* CWHCHomeViewController.swift in Sources */,
 				04C0437C1FE3D20700E922E8 /* CWHCSignupGenderTableViewCell.swift in Sources */,
 				04C17CA51FE29BC200F228CF /* CWHCLoginViewController.swift in Sources */,

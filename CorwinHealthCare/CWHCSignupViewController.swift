@@ -142,7 +142,7 @@ class CWHCSignupViewController: UIViewController , UITableViewDataSource , UITab
     {
         var isEmptyField = false
         let snackBar : TTGSnackbar = TTGSnackbar.init()
-        for var i in 0..<4
+        for var i in 0..<3
         {
             let cellIndex = NSIndexPath.init(row: i, section: 0)
 
@@ -158,6 +158,37 @@ class CWHCSignupViewController: UIViewController , UITableViewDataSource , UITab
         {
             snackBar.message = "Please enter all required data"
             snackBar.show()
+        }
+        else
+        {
+            var cellIndex = NSIndexPath.init(row: 0, section: 0)
+            var cell = signupTable.cellForRow(at: cellIndex as IndexPath) as! CWHCSignupTableViewCell
+            if GenericUtilities.isValidEmail(testStr: cell.dataField.text!)
+            {
+                cellIndex = NSIndexPath.init(row: 2, section: 0)
+                cell = signupTable.cellForRow(at: cellIndex as IndexPath) as! CWHCSignupTableViewCell
+                
+                let cellIndex1 = NSIndexPath.init(row: 0, section: 0)
+                let cell1 = signupTable.cellForRow(at: cellIndex1 as IndexPath) as! CWHCSignupTableViewCell
+                
+                if cell.dataField.text == cell1.dataField.text
+                {
+                    //sign up API
+                }
+                else
+                {
+                    snackBar.message = "Password and confirm password both must be the same"
+                    snackBar.show()
+                }
+                
+                
+            }
+            else
+            {
+                snackBar.message = "Please enter valid Email ID"
+                snackBar.show()
+            }
+            
         }
     }
 }
