@@ -253,7 +253,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A2M-ih-uak">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A2M-ih-uak">
                                 <rect key="frame" x="20" y="72" width="280" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -284,13 +284,52 @@
                                             <outlet property="dataField" destination="bRf-dc-jNt" id="adh-ze-FGf"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="dXk-Ho-Wzy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellid1" id="dXk-Ho-Wzy" customClass="CWHCSignupGenderTableViewCell" customModule="CorwinHealthCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="280" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dXk-Ho-Wzy" id="jBg-2r-yXz">
                                             <rect key="frame" x="0.0" y="0.0" width="280" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjk-9e-OQu">
+                                                    <rect key="frame" x="30" y="12" width="66" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cMM-Qn-43k">
+                                                    <rect key="frame" x="104" y="5" width="156" height="34"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9B-4I-4dx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="73" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title="Male" image="unselected">
+                                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nha-5x-sYz">
+                                                            <rect key="frame" x="83" y="0.0" width="73" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title="Female" image="unselected">
+                                                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cMM-Qn-43k" firstAttribute="leading" secondItem="pjk-9e-OQu" secondAttribute="trailing" constant="8" symbolic="YES" id="16a-dw-1ep"/>
+                                                <constraint firstItem="pjk-9e-OQu" firstAttribute="centerY" secondItem="jBg-2r-yXz" secondAttribute="centerY" id="Fbl-Vm-ZH9"/>
+                                                <constraint firstItem="pjk-9e-OQu" firstAttribute="leading" secondItem="jBg-2r-yXz" secondAttribute="leading" constant="30" id="R41-oD-vDr"/>
+                                                <constraint firstAttribute="trailing" secondItem="cMM-Qn-43k" secondAttribute="trailing" constant="20" symbolic="YES" id="Z6V-7V-Xd9"/>
+                                                <constraint firstItem="cMM-Qn-43k" firstAttribute="top" secondItem="jBg-2r-yXz" secondAttribute="top" constant="5" id="eNT-9R-VaJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="cMM-Qn-43k" secondAttribute="bottom" constant="5" id="ihk-9q-AQx"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="femaleBtn" destination="Nha-5x-sYz" id="ioL-lC-IfG"/>
+                                            <outlet property="maleBtn" destination="g9B-4I-4dx" id="pOb-fr-8Xk"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="JJp-d7-j0d">
                                         <rect key="frame" x="0.0" y="116" width="280" height="44"/>
@@ -381,5 +420,6 @@
     <resources>
         <image name="f_home_h" width="22" height="23"/>
         <image name="second" width="30" height="30"/>
+        <image name="unselected" width="20" height="20"/>
     </resources>
 </document>

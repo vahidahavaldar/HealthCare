@@ -7,8 +7,12 @@
 //
 
 import UIKit
+
 class CWHCSignupViewController: UIViewController , UITableViewDataSource , UITableViewDelegate,UITextFieldDelegate {
 
+    
+    var checkedArr : NSMutableArray = ["0","0"];
+    var uncheckedArr: NSMutableArray = ["0","0"];
     
     @IBOutlet weak var signupTable: UITableView!
     let placeholdersForTextFields = ["Email ID" , "Contact Number" , "Password" , "Confirm Password" , "Referral Code (Optional)"]
@@ -48,9 +52,40 @@ class CWHCSignupViewController: UIViewController , UITableViewDataSource , UITab
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return placeholdersForTextFields.count
+        return placeholdersForTextFields.count + 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row == 5
+        {
+            let cell : CWHCSignupGenderTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cellid1") as! CWHCSignupGenderTableViewCell
+            cell.femaleBtn.addTarget(self, action: #selector(genderBtnTapped(sender:)), for: .touchUpInside)
+            cell.maleBtn.addTarget(self, action: #selector(genderBtnTapped(sender:)), for: .touchUpInside)
+            let s1 : NSString = checkedArr.object(at:0) as! NSString
+            if s1 == "1"
+            {
+                cell.maleBtn.setImage(UIImage.init(named: "selected.png"), for: .normal)
+                
+            }
+            else
+            {
+                cell.maleBtn .setImage(UIImage.init(named: "unselected.png"), for: .normal)
+
+            }
+            let s2 : NSString = checkedArr.object(at: 1) as! NSString
+            if s2 == "1"
+            {
+                cell.femaleBtn.setImage(UIImage.init(named: "selected.png"), for: .normal)
+
+            }
+            else
+            {
+                cell.femaleBtn.setImage(UIImage.init(named: "unselected.png"), for: .normal)
+
+            }
+            return cell
+        }
+            
         let cell : CWHCSignupTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellID)! as! CWHCSignupTableViewCell
     
         cell.dataField.placeholder = placeholdersForTextFields[indexPath.row]
@@ -64,6 +99,25 @@ class CWHCSignupViewController: UIViewController , UITableViewDataSource , UITab
         print("tapped \(indexPath.row)")
     }
     
+    func genderBtnTapped(sender : UIButton) -> Void
+    {
+       // let contentView = sender.superview
+      //  let cell : CWHCSignupGenderTableViewCell = contentView?.superview as! CWHCSignupGenderTableViewCell
+        
+        let str : NSString = checkedArr.object(at: sender.tag) as! NSString
+        if str == "0"
+        {
+            checkedArr.removeAllObjects()
+            checkedArr.addObjects(from: uncheckedArr as! [Any])
+            checkedArr.replaceObject(at: sender.tag, with: "1")
+        }
+        else
+        {
+            checkedArr.replaceObject(at: sender.tag, with: "0")
+        }
+        signupTable.reloadData()
+        
+    }
     
     
     // Hide the keyboard when the return key pressed

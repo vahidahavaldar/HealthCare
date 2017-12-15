@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,17 +23,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xs1-iK-Hol">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.24313725490196078" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ch1-v3-1-tagline-3" translatesAutoresizingMaskIntoConstraints="NO" id="xs1-iK-Hol">
+                                <rect key="frame" x="21" y="167" width="333.5" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xs1-iK-Hol" secondAttribute="height" multiplier="1:1" id="31w-4J-0Rl"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xs1-iK-Hol" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="COy-H2-kHQ"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="xs1-iK-Hol" secondAttribute="bottom" id="Uf8-0x-Sjb"/>
-                            <constraint firstItem="xs1-iK-Hol" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="gbd-aV-vLx"/>
-                            <constraint firstAttribute="trailing" secondItem="xs1-iK-Hol" secondAttribute="trailing" id="pmZ-ZS-vle"/>
+                            <constraint firstItem="xs1-iK-Hol" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="NjB-CS-HxI"/>
+                            <constraint firstItem="xs1-iK-Hol" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UYX-kL-x44"/>
+                            <constraint firstItem="xs1-iK-Hol" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.5" id="tOw-pl-Wrx"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,4 +44,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ch1-v3-1-tagline-3" width="1050" height="1050"/>
+    </resources>
 </document>
