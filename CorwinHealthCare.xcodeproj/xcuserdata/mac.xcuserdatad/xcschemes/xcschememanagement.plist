@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CorwinHealthCare.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>04C17C6E1FE28D4C00F228CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04C17C841FE28D4F00F228CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04C17C8F1FE28D5000F228CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

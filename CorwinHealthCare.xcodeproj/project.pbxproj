@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04C043721FE3875C00E922E8 /* CWHCSignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C043711FE3875C00E922E8 /* CWHCSignupTableViewCell.swift */; };
+		04C043761FE3A5FB00E922E8 /* TTGSnackbar in Resources */ = {isa = PBXBuildFile; fileRef = 04C043751FE3A5FB00E922E8 /* TTGSnackbar */; };
+		04C043781FE3A63400E922E8 /* TTGSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C043771FE3A63400E922E8 /* TTGSnackbar.swift */; };
+		04C17C731FE28D4D00F228CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17C721FE28D4D00F228CF /* AppDelegate.swift */; };
+		04C17C7A1FE28D4D00F228CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C17C781FE28D4D00F228CF /* Main.storyboard */; };
+		04C17C7C1FE28D4D00F228CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C17C7B1FE28D4D00F228CF /* Assets.xcassets */; };
+		04C17C7F1FE28D4D00F228CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C17C7D1FE28D4D00F228CF /* LaunchScreen.storyboard */; };
+		04C17C8A1FE28D5000F228CF /* CorwinHealthCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17C891FE28D5000F228CF /* CorwinHealthCareTests.swift */; };
+		04C17C951FE28D5000F228CF /* CorwinHealthCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17C941FE28D5000F228CF /* CorwinHealthCareUITests.swift */; };
+		04C17CA51FE29BC200F228CF /* CWHCLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17CA41FE29BC200F228CF /* CWHCLoginViewController.swift */; };
+		04C17CA71FE2B18500F228CF /* CWHCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17CA61FE2B18500F228CF /* CWHCHomeViewController.swift */; };
+		04C17CAB1FE2F57E00F228CF /* CWHCSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17CAA1FE2F57E00F228CF /* CWHCSignupViewController.swift */; };
+		04C17CAE1FE2FFD000F228CF /* GenericUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17CAD1FE2FFD000F228CF /* GenericUtilities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04C17C861FE28D5000F228CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C17C671FE28D4C00F228CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C17C6E1FE28D4C00F228CF;
+			remoteInfo = CorwinHealthCare;
+		};
+		04C17C911FE28D5000F228CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C17C671FE28D4C00F228CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C17C6E1FE28D4C00F228CF;
+			remoteInfo = CorwinHealthCare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04C043711FE3875C00E922E8 /* CWHCSignupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCSignupTableViewCell.swift; sourceTree = "<group>"; };
+		04C043751FE3A5FB00E922E8 /* TTGSnackbar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TTGSnackbar; sourceTree = "<group>"; };
+		04C043771FE3A63400E922E8 /* TTGSnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTGSnackbar.swift; path = TTGSnackbar/TTGSnackbar.swift; sourceTree = "<group>"; };
+		04C17C6F1FE28D4C00F228CF /* CorwinHealthCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorwinHealthCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C17C721FE28D4D00F228CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04C17C791FE28D4D00F228CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04C17C7B1FE28D4D00F228CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04C17C7E1FE28D4D00F228CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04C17C801FE28D4D00F228CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C17C851FE28D5000F228CF /* CorwinHealthCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorwinHealthCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C17C891FE28D5000F228CF /* CorwinHealthCareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorwinHealthCareTests.swift; sourceTree = "<group>"; };
+		04C17C8B1FE28D5000F228CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C17C901FE28D5000F228CF /* CorwinHealthCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorwinHealthCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C17C941FE28D5000F228CF /* CorwinHealthCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorwinHealthCareUITests.swift; sourceTree = "<group>"; };
+		04C17C961FE28D5000F228CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C17CA41FE29BC200F228CF /* CWHCLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCLoginViewController.swift; sourceTree = "<group>"; };
+		04C17CA61FE2B18500F228CF /* CWHCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCHomeViewController.swift; sourceTree = "<group>"; };
+		04C17CAA1FE2F57E00F228CF /* CWHCSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCSignupViewController.swift; sourceTree = "<group>"; };
+		04C17CAD1FE2FFD000F228CF /* GenericUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericUtilities.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04C17C6C1FE28D4C00F228CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C17C821FE28D4F00F228CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C17C8D1FE28D5000F228CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C17C661FE28D4B00F228CF = {
+			isa = PBXGroup;
+			children = (
+				04C17C711FE28D4C00F228CF /* CorwinHealthCare */,
+				04C17C881FE28D5000F228CF /* CorwinHealthCareTests */,
+				04C17C931FE28D5000F228CF /* CorwinHealthCareUITests */,
+				04C17C701FE28D4C00F228CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04C17C701FE28D4C00F228CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04C17C6F1FE28D4C00F228CF /* CorwinHealthCare.app */,
+				04C17C851FE28D5000F228CF /* CorwinHealthCareTests.xctest */,
+				04C17C901FE28D5000F228CF /* CorwinHealthCareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04C17C711FE28D4C00F228CF /* CorwinHealthCare */ = {
+			isa = PBXGroup;
+			children = (
+				04C17C781FE28D4D00F228CF /* Main.storyboard */,
+				04C17C7B1FE28D4D00F228CF /* Assets.xcassets */,
+				04C17C7D1FE28D4D00F228CF /* LaunchScreen.storyboard */,
+				04C17C801FE28D4D00F228CF /* Info.plist */,
+				04C17CAC1FE2FE6C00F228CF /* Utilities */,
+				04C17CA91FE2F4EE00F228CF /* AppDelegate */,
+				04C17CA81FE2F1F600F228CF /* ViewControllers */,
+			);
+			path = CorwinHealthCare;
+			sourceTree = "<group>";
+		};
+		04C17C881FE28D5000F228CF /* CorwinHealthCareTests */ = {
+			isa = PBXGroup;
+			children = (
+				04C17C891FE28D5000F228CF /* CorwinHealthCareTests.swift */,
+				04C17C8B1FE28D5000F228CF /* Info.plist */,
+			);
+			path = CorwinHealthCareTests;
+			sourceTree = "<group>";
+		};
+		04C17C931FE28D5000F228CF /* CorwinHealthCareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04C17C941FE28D5000F228CF /* CorwinHealthCareUITests.swift */,
+				04C17C961FE28D5000F228CF /* Info.plist */,
+			);
+			path = CorwinHealthCareUITests;
+			sourceTree = "<group>";
+		};
+		04C17CA81FE2F1F600F228CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C17CA41FE29BC200F228CF /* CWHCLoginViewController.swift */,
+				04C17CA61FE2B18500F228CF /* CWHCHomeViewController.swift */,
+				04C17CAA1FE2F57E00F228CF /* CWHCSignupViewController.swift */,
+				04C043711FE3875C00E922E8 /* CWHCSignupTableViewCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04C17CA91FE2F4EE00F228CF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				04C17C721FE28D4D00F228CF /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		04C17CAC1FE2FE6C00F228CF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04C043771FE3A63400E922E8 /* TTGSnackbar.swift */,
+				04C043751FE3A5FB00E922E8 /* TTGSnackbar */,
+				04C17CAD1FE2FFD000F228CF /* GenericUtilities.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04C17C6E1FE28D4C00F228CF /* CorwinHealthCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C17C991FE28D5000F228CF /* Build configuration list for PBXNativeTarget "CorwinHealthCare" */;
+			buildPhases = (
+				04C17C6B1FE28D4C00F228CF /* Sources */,
+				04C17C6C1FE28D4C00F228CF /* Frameworks */,
+				04C17C6D1FE28D4C00F228CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorwinHealthCare;
+			productName = CorwinHealthCare;
+			productReference = 04C17C6F1FE28D4C00F228CF /* CorwinHealthCare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04C17C841FE28D4F00F228CF /* CorwinHealthCareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C17C9C1FE28D5000F228CF /* Build configuration list for PBXNativeTarget "CorwinHealthCareTests" */;
+			buildPhases = (
+				04C17C811FE28D4F00F228CF /* Sources */,
+				04C17C821FE28D4F00F228CF /* Frameworks */,
+				04C17C831FE28D4F00F228CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C17C871FE28D5000F228CF /* PBXTargetDependency */,
+			);
+			name = CorwinHealthCareTests;
+			productName = CorwinHealthCareTests;
+			productReference = 04C17C851FE28D5000F228CF /* CorwinHealthCareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04C17C8F1FE28D5000F228CF /* CorwinHealthCareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C17C9F1FE28D5000F228CF /* Build configuration list for PBXNativeTarget "CorwinHealthCareUITests" */;
+			buildPhases = (
+				04C17C8C1FE28D5000F228CF /* Sources */,
+				04C17C8D1FE28D5000F228CF /* Frameworks */,
+				04C17C8E1FE28D5000F228CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04C17C921FE28D5000F228CF /* PBXTargetDependency */,
+			);
+			name = CorwinHealthCareUITests;
+			productName = CorwinHealthCareUITests;
+			productReference = 04C17C901FE28D5000F228CF /* CorwinHealthCareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04C17C671FE28D4C00F228CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = CorWin;
+				TargetAttributes = {
+					04C17C6E1FE28D4C00F228CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					04C17C841FE28D4F00F228CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04C17C6E1FE28D4C00F228CF;
+					};
+					04C17C8F1FE28D5000F228CF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 04C17C6E1FE28D4C00F228CF;
+					};
+				};
+			};
+			buildConfigurationList = 04C17C6A1FE28D4C00F228CF /* Build configuration list for PBXProject "CorwinHealthCare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04C17C661FE28D4B00F228CF;
+			productRefGroup = 04C17C701FE28D4C00F228CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04C17C6E1FE28D4C00F228CF /* CorwinHealthCare */,
+				04C17C841FE28D4F00F228CF /* CorwinHealthCareTests */,
+				04C17C8F1FE28D5000F228CF /* CorwinHealthCareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04C17C6D1FE28D4C00F228CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C17C7F1FE28D4D00F228CF /* LaunchScreen.storyboard in Resources */,
+				04C17C7C1FE28D4D00F228CF /* Assets.xcassets in Resources */,
+				04C17C7A1FE28D4D00F228CF /* Main.storyboard in Resources */,
+				04C043761FE3A5FB00E922E8 /* TTGSnackbar in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C17C831FE28D4F00F228CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C17C8E1FE28D5000F228CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04C17C6B1FE28D4C00F228CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C17CA71FE2B18500F228CF /* CWHCHomeViewController.swift in Sources */,
+				04C17CA51FE29BC200F228CF /* CWHCLoginViewController.swift in Sources */,
+				04C043721FE3875C00E922E8 /* CWHCSignupTableViewCell.swift in Sources */,
+				04C17C731FE28D4D00F228CF /* AppDelegate.swift in Sources */,
+				04C17CAB1FE2F57E00F228CF /* CWHCSignupViewController.swift in Sources */,
+				04C043781FE3A63400E922E8 /* TTGSnackbar.swift in Sources */,
+				04C17CAE1FE2FFD000F228CF /* GenericUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C17C811FE28D4F00F228CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C17C8A1FE28D5000F228CF /* CorwinHealthCareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C17C8C1FE28D5000F228CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C17C951FE28D5000F228CF /* CorwinHealthCareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04C17C871FE28D5000F228CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C17C6E1FE28D4C00F228CF /* CorwinHealthCare */;
+			targetProxy = 04C17C861FE28D5000F228CF /* PBXContainerItemProxy */;
+		};
+		04C17C921FE28D5000F228CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C17C6E1FE28D4C00F228CF /* CorwinHealthCare */;
+			targetProxy = 04C17C911FE28D5000F228CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04C17C781FE28D4D00F228CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C17C791FE28D4D00F228CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04C17C7D1FE28D4D00F228CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C17C7E1FE28D4D00F228CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04C17C971FE28D5000F228CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04C17C981FE28D5000F228CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04C17C9A1FE28D5000F228CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CorwinHealthCare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corwinminds.CorwinHealthCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		04C17C9B1FE28D5000F228CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CorwinHealthCare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corwinminds.CorwinHealthCare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		04C17C9D1FE28D5000F228CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CorwinHealthCareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corwinminds.CorwinHealthCareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CorwinHealthCare.app/CorwinHealthCare";
+			};
+			name = Debug;
+		};
+		04C17C9E1FE28D5000F228CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CorwinHealthCareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corwinminds.CorwinHealthCareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CorwinHealthCare.app/CorwinHealthCare";
+			};
+			name = Release;
+		};
+		04C17CA01FE28D5000F228CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CorwinHealthCareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corwinminds.CorwinHealthCareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CorwinHealthCare;
+			};
+			name = Debug;
+		};
+		04C17CA11FE28D5000F228CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CorwinHealthCareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.corwinminds.CorwinHealthCareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CorwinHealthCare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04C17C6A1FE28D4C00F228CF /* Build configuration list for PBXProject "CorwinHealthCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C17C971FE28D5000F228CF /* Debug */,
+				04C17C981FE28D5000F228CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C17C991FE28D5000F228CF /* Build configuration list for PBXNativeTarget "CorwinHealthCare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C17C9A1FE28D5000F228CF /* Debug */,
+				04C17C9B1FE28D5000F228CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C17C9C1FE28D5000F228CF /* Build configuration list for PBXNativeTarget "CorwinHealthCareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C17C9D1FE28D5000F228CF /* Debug */,
+				04C17C9E1FE28D5000F228CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C17C9F1FE28D5000F228CF /* Build configuration list for PBXNativeTarget "CorwinHealthCareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C17CA01FE28D5000F228CF /* Debug */,
+				04C17CA11FE28D5000F228CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04C17C671FE28D4C00F228CF /* Project object */;
+}
