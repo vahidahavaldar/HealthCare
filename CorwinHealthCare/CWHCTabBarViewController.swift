@@ -22,14 +22,16 @@ class CWHCTabBarViewController: UITabBarController , UIAdaptivePresentationContr
         //create a new button
         let button = UIButton.init(type: .custom)
         //set image for button
-        button.setImage(UIImage(named: "hc_seetings"), for: UIControlState.normal)
+        let newImg = GenericUtilities.imageWithColor(color1: UIColor.white, original: UIImage(named: "hc_seetings")!)
+        button.setImage(newImg, for: UIControlState.normal)
         //add function for button
         button.addTarget(self, action: #selector(openMenu(sender:)), for: UIControlEvents.touchUpInside)
         //set frame
         button.frame = CGRect(x: 0, y: 0, width: 53, height: 51)
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.rightBarButtonItem = barButton;
-       // self.navigationItem.rightBarButtonItem?.target = self
+        self.navigationItem.hidesBackButton = true
+        // self.navigationItem.rightBarButtonItem?.target = self
        // self.navigationItem.rightBarButtonItem?.action = #selector(openMenu(sender:))
     }
     override func viewWillLayoutSubviews() {
@@ -58,8 +60,8 @@ class CWHCTabBarViewController: UITabBarController , UIAdaptivePresentationContr
     
     //popover menu
     public func openMenu(sender:UIButton) {
-        let titles:NSArray = ["Menu1", "Menu2", "Menu3"]
-        let descriptions:NSArray = ["description1", "description2", "description3"]
+        let titles:NSArray = ["Menu1", "Menu2", "Log Out"]
+        let descriptions:NSArray = ["description1", "description2", ""]
         
         let popOverViewController = PopOverViewController.instantiate()
         popOverViewController.setTitles(titles as! Array<String>)
@@ -81,6 +83,7 @@ class CWHCTabBarViewController: UITabBarController , UIAdaptivePresentationContr
             case 1:
                 break
             case 2:
+                self.navigationController?.popViewController(animated: false)
                 break
             default:
                 break
