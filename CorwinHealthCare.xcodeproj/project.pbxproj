@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A6DB481FE4E30900C072C2 /* CWHCTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6DB471FE4E30900C072C2 /* CWHCTabBarViewController.swift */; };
+		04A6DB4C1FE4EAC100C072C2 /* CWHCRecordVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6DB4B1FE4EAC100C072C2 /* CWHCRecordVoiceViewController.swift */; };
+		04A6DB4E1FE4EAF000C072C2 /* CWHCAffiliateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6DB4D1FE4EAF000C072C2 /* CWHCAffiliateViewController.swift */; };
 		04C043721FE3875C00E922E8 /* CWHCSignupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C043711FE3875C00E922E8 /* CWHCSignupTableViewCell.swift */; };
 		04C043781FE3A63400E922E8 /* TTGSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C043771FE3A63400E922E8 /* TTGSnackbar.swift */; };
 		04C0437A1FE3D02E00E922E8 /* TTGSnackbar in Resources */ = {isa = PBXBuildFile; fileRef = 04C043791FE3D02E00E922E8 /* TTGSnackbar */; };
@@ -22,6 +25,7 @@
 		04C17CA71FE2B18500F228CF /* CWHCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17CA61FE2B18500F228CF /* CWHCHomeViewController.swift */; };
 		04C17CAB1FE2F57E00F228CF /* CWHCSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17CAA1FE2F57E00F228CF /* CWHCSignupViewController.swift */; };
 		04C17CAE1FE2FFD000F228CF /* GenericUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C17CAD1FE2FFD000F228CF /* GenericUtilities.swift */; };
+		04E2C9FD1FE571C900DDC9E4 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2C9FC1FE571C900DDC9E4 /* PopOverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A6DB471FE4E30900C072C2 /* CWHCTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCTabBarViewController.swift; sourceTree = "<group>"; };
+		04A6DB4B1FE4EAC100C072C2 /* CWHCRecordVoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCRecordVoiceViewController.swift; sourceTree = "<group>"; };
+		04A6DB4D1FE4EAF000C072C2 /* CWHCAffiliateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCAffiliateViewController.swift; sourceTree = "<group>"; };
 		04C043711FE3875C00E922E8 /* CWHCSignupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCSignupTableViewCell.swift; sourceTree = "<group>"; };
 		04C043771FE3A63400E922E8 /* TTGSnackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTGSnackbar.swift; path = TTGSnackbar/TTGSnackbar.swift; sourceTree = "<group>"; };
 		04C043791FE3D02E00E922E8 /* TTGSnackbar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TTGSnackbar; sourceTree = "<group>"; };
@@ -63,6 +70,7 @@
 		04C17CA61FE2B18500F228CF /* CWHCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCHomeViewController.swift; sourceTree = "<group>"; };
 		04C17CAA1FE2F57E00F228CF /* CWHCSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWHCSignupViewController.swift; sourceTree = "<group>"; };
 		04C17CAD1FE2FFD000F228CF /* GenericUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericUtilities.swift; sourceTree = "<group>"; };
+		04E2C9FC1FE571C900DDC9E4 /* PopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,9 @@
 				04C043711FE3875C00E922E8 /* CWHCSignupTableViewCell.swift */,
 				04C0437B1FE3D20700E922E8 /* CWHCSignupGenderTableViewCell.swift */,
 				04C0437D1FE40F8300E922E8 /* CWHCForgotPasswordViewController.swift */,
+				04A6DB471FE4E30900C072C2 /* CWHCTabBarViewController.swift */,
+				04A6DB4B1FE4EAC100C072C2 /* CWHCRecordVoiceViewController.swift */,
+				04A6DB4D1FE4EAF000C072C2 /* CWHCAffiliateViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +177,7 @@
 		04C17CAC1FE2FE6C00F228CF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				04E2C9FC1FE571C900DDC9E4 /* PopOverViewController.swift */,
 				04C043771FE3A63400E922E8 /* TTGSnackbar.swift */,
 				04C043791FE3D02E00E922E8 /* TTGSnackbar */,
 				04C17CAD1FE2FFD000F228CF /* GenericUtilities.swift */,
@@ -308,13 +320,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A6DB4C1FE4EAC100C072C2 /* CWHCRecordVoiceViewController.swift in Sources */,
 				04C0437E1FE40F8400E922E8 /* CWHCForgotPasswordViewController.swift in Sources */,
 				04C17CA71FE2B18500F228CF /* CWHCHomeViewController.swift in Sources */,
+				04A6DB4E1FE4EAF000C072C2 /* CWHCAffiliateViewController.swift in Sources */,
 				04C0437C1FE3D20700E922E8 /* CWHCSignupGenderTableViewCell.swift in Sources */,
 				04C17CA51FE29BC200F228CF /* CWHCLoginViewController.swift in Sources */,
 				04C043721FE3875C00E922E8 /* CWHCSignupTableViewCell.swift in Sources */,
 				04C17C731FE28D4D00F228CF /* AppDelegate.swift in Sources */,
+				04E2C9FD1FE571C900DDC9E4 /* PopOverViewController.swift in Sources */,
 				04C17CAB1FE2F57E00F228CF /* CWHCSignupViewController.swift in Sources */,
+				04A6DB481FE4E30900C072C2 /* CWHCTabBarViewController.swift in Sources */,
 				04C043781FE3A63400E922E8 /* TTGSnackbar.swift in Sources */,
 				04C17CAE1FE2FFD000F228CF /* GenericUtilities.swift in Sources */,
 			);
